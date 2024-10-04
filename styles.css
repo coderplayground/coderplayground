@@ -1,0 +1,299 @@
+/* Import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Enhanced Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f39c12;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em 0;
+    background-color: #f4f4f4;
+}
+
+.image-section .curved-rectangle {
+    width: 80%;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Join Section */
+.join-section {
+    text-align: center;
+    padding: 3em 0;
+    background-color: #f7f9fc;
+}
+
+.join-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.join-section .features {
+    display: flex;
+    justify-content: center;
+}
+
+.join-section .features .feature-card {
+    min-height: 200px; /* Minimum height for cards */
+    padding: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+a {
+    color: #556b2f;
+    text-decoration: none;
+}
+.join-section .features .feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Events Section */
+.events-section {
+    text-align: center;
+    padding: 3em 0;
+    background-color: #f4f4f4;
+}
+
+.events-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.events-section .articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.events-section .event-card {
+    width: calc(33% - 20px);
+    min-height: 400px; /* Minimum height for cards */
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.events-section .event-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Date Style */
+.events-section .event-date {
+    font-size: 16px; /* Font size for the date */
+    font-weight: 400; /* Font weight for the date */
+    margin-bottom: 10px; /* Space below the date */
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+
+/* See All Button */
+.see-all-btn {
+    margin-top: 20px;
+}
+
+.see-all-btn a {
+    display: inline-block;
+    background-color: black; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px 25px 25px 25px; /* Curved corners on left and right */
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s;
+}
+
+.see-all-btn a:hover {
+    background-color: #444; /* Button hover color */
+}
+
+/* Example for other buttons */
+.button {
+    display: inline-block;
+    background-color: black; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px 25px 25px 25px; /* Curved corners on left and right */
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #444; /* Button hover color */
+}
+
+/* Contributing Section */
+.contribute-section {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.contribute-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contribute-section .contribute-card {
+    min-height: 160px; /* Minimum height for cards */
+    padding: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+    color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the body takes full height and uses flexbox */
+html, body {
+    height: 100%; /* Full height for the html and body */
+    margin: 0; /* Remove default margin */
+}
+
+.wrapper {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Make the wrapper at least the height of the viewport */
+}
+
+main {
+    flex: 1; /* Allow main content to grow and take available space */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+footer .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-left h1 {
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+footer .footer-right {
+    margin-right: 150px;
+    text-align: left;
+}
+
+footer .footer-right h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer .footer-right .footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+footer .footer-right .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .footer-right .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .join-section .features,
+    .events-section .articles {
+        flex-direction: column;
+    }
+
+    .events-section .event-card,
+    .join-section .feature-card {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .image-section {
+        flex-direction: column; /* Stack images on small screens */
+    }
+
+    .image-section .curved-rectangle {
+        width: 100%; /* Full width for images */
+    }
+}
