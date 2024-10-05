@@ -31,9 +31,9 @@ We welcome contributions from the community! If you'd like to contribute to our 
 
 ## 🤝 License
 
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code.
+This project is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute the code.
 
-### MIT License
+### MIT License [
 
 
 
