@@ -8,7 +8,7 @@ const events = [
         imageWidth: "100%", // Image width
         imageHeight: "600px", // Image height
         color: "#03a5fc", // Color for the card
-        link: "/webathon" // Link to the specific event page
+        link: "https://coderplayground.github.io/webathon/" // Link to the specific event page
     },
     // Example 1
     // {
